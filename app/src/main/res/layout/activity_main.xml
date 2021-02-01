@@ -22,15 +22,15 @@
         android:id="@+id/buttonroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#ff02"
         android:gravity="center"
         android:text="Roll"
-        android:backgroundTint="#ff02"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintVertical_bias="0.667" />
 
     <ImageView
         android:id="@+id/imgdice"
@@ -43,5 +43,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dice_1"
         tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021 @ Dice Roller by Hoang Nam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/intentbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonroll" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

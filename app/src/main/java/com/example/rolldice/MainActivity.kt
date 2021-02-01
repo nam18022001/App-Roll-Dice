@@ -1,5 +1,6 @@
 package com.example.rolldice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -22,7 +23,10 @@ class MainActivity : AppCompatActivity() {
                 else -> imgdice.setImageResource(R.drawable.dice_6)
             }
         }
-
+        intentbutton.setOnClickListener {
+            val info : Intent = Intent(this, MainActivity2::class.java)
+            startActivity(info)
+        }
     }
 
 
